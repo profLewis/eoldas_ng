@@ -1,0 +1,27 @@
+package:
+  name: eoldas_ng
+  version: "0.3"
+
+source:
+  git_url: https://github.com/jgomezdans/eoldas_ng.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+
+test:
+  imports:
+    - matplotlib
+    - scipy
+    - numpy as np
+    - eoldas_ng
+
+about:
+  home: https://github.com/jgomezdans/eoldas_ng.git
+  license: BSD
